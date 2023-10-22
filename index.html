@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/logo.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -23,11 +19,7 @@
         class="navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom"
       >
         <div class="container">
-          <img
-            class="logo"
-            src="assets/logo.png"
-            alt=""
-          />
+          <img class="logo" src="assets/logo.png" alt="" />
           <button
             class="navbar-toggler"
             type="button"
@@ -103,7 +95,7 @@
 
       <div
         id="carouselExampleCaptions"
-        class="carousel slide"
+        class="carousel slide hero-sec"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -111,7 +103,7 @@
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
-            class="active "
+            class="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -207,12 +199,14 @@
 
     <section class="about py-3" id="About">
       <div class="container">
-        <div class="text-center my-5">
-          <h1 >About <span class="text-danger">us</span></h1>
+        <div class="text-center my-5 about-heading">
+          <h1>About <span class="text-danger">us</span></h1>
           <hr class="w-25 m-auto" />
         </div>
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-12 text-center text-lg-start">
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12 text-center text-lg-start about-intro-1"
+          >
             <h1>HELLO <span class="text-danger">THERE!</span></h1>
             <p class="p-2">
               "Paws & Play Dog Services is your trusted partner in providing
@@ -253,7 +247,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                   <button
-                    class="accordion-button collapsed  bg-white text-danger btn-outline-danger"
+                    class="accordion-button collapsed bg-white text-danger btn-outline-danger"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseTwo"
@@ -304,7 +298,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingfour">
                   <button
-                    class="accordion-button collapsed  bg-white text-danger btn-outline-danger"
+                    class="accordion-button collapsed bg-white text-danger btn-outline-danger"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapsefour"
@@ -329,7 +323,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingfive">
                   <button
-                    class="accordion-button collapsed  bg-white text-danger btn-outline-danger"
+                    class="accordion-button collapsed bg-white text-danger btn-outline-danger"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapsefive"
@@ -353,7 +347,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center about-intro-2">
             <img
               class="about-us-img img-fluid img-thumbnail"
               src="assets/logo.png"
@@ -366,11 +360,11 @@
 
     <section class="services pt-3 bg-light" id="Services">
       <div class="container">
-        <div class="text-center my-5">
+        <div class="text-center my-5 services-heading">
           <h1>Our <span class="text-danger">services</span></h1>
           <hr class="w-25 m-auto" />
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 services-part-1">
           <div class="col-sm-12 col-md-4 col-lg-4 col-12 my-3">
             <div class="card shadow border border-1">
               <img
@@ -386,7 +380,7 @@
                   dog's energy level and ensure they get the fresh air and
                   socialization they need.
                 </p>
-                <button type="button" class="btn btn-outline-danger">
+                <button type="button" class="btn text-danger">
                   Learn more...
                 </button>
               </div>
@@ -407,7 +401,7 @@
                   daycare services offer round-the-clock care and fun
                   activities.
                 </p>
-                <button type="button" class="btn btn-outline-danger">
+                <button type="button" class="btn text-danger">
                   Learn more...
                 </button>
               </div>
@@ -427,14 +421,14 @@
                   of grooming services, including baths, haircuts, nail trims,
                   and more. We'll have your dog looking and feeling their best.
                 </p>
-                <button type="button" class="btn btn-outline-danger">
+                <button type="button" class="btn text-danger">
                   Learn more...
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="row mb-5">
+        <div class="row mb-5 services-part-2">
           <div class="col-sm-12 col-md-4 col-lg-4 col-12 my-3">
             <div class="card shadow border border-1">
               <img
@@ -449,7 +443,7 @@
                   sitters will come to your home to provide love, care, and
                   attention. We'll ensure your pet's routine is maintained.
                 </p>
-                <button type="button" class="btn btn-outline-danger">
+                <button type="button" class="btn text-danger">
                   Learn more...
                 </button>
               </div>
@@ -469,7 +463,7 @@
                   pup basic obedience, socialization, and good behavior. We'll
                   help your puppy become a well-mannered
                 </p>
-                <button type="button" class="btn btn-outline-danger">
+                <button type="button" class="btn text-danger">
                   Learn more...
                 </button>
               </div>
@@ -489,7 +483,7 @@
                   transportation service is here to make your life easier. We
                   ensure safe and stress-free journeys for your dog.
                 </p>
-                <button type="button" class="btn btn-outline-danger">
+                <button type="button" class="btn text-danger">
                   Learn more...
                 </button>
               </div>
@@ -501,13 +495,13 @@
 
     <section class="team my-5 text-center bg-danger" id="Team">
       <div class="container">
-        <div class="text-center my-5">
+        <div class="text-center my-5 team-heading">
           <h1>Our <span class="text-white">team</span></h1>
           <hr class="w-25 m-auto" />
         </div>
         <div
           id="carouselExampleIndicators"
-          class="carousel slide"
+          class="carousel slide team-data"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
@@ -565,7 +559,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-8 col-12 my-2 text-start">
                   <div class="card m-auto text-center text-lg-start">
                     <div class="card-body">
-                      <h5 class="card-title fs-2">Dr. Benjamin "Ben" Barker - Veterinarian Extraordinaire</h5>
+                      <h5 class="card-title fs-2">
+                        Dr. Benjamin "Ben" Barker - Veterinarian Extraordinaire
+                      </h5>
                       <p class="card-text">
                         Dr. Ben Barker, our male veterinarian, has a passion for
                         canine health. With over 15 years of experience, he's a
@@ -591,7 +587,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-8 col-12 my-2 text-start">
                   <div class="card m-auto text-center text-lg-start">
                     <div class="card-body">
-                      <h5 class="card-title fs-2"> Emily Williams - Dog Grooming Maestro</h5>
+                      <h5 class="card-title fs-2">
+                        Emily Williams - Dog Grooming Maestro
+                      </h5>
                       <p class="card-text">
                         Emily, our female grooming expert, transforms dogs into
                         picture-perfect pets. With a gentle touch and creative
@@ -617,7 +615,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-8 col-12 my-2 text-start">
                   <div class="card m-auto text-center text-lg-start">
                     <div class="card-body">
-                      <h5 class="card-title fs-2">Dr. Laura Martinez - Nutrition Guru</h5>
+                      <h5 class="card-title fs-2">
+                        Dr. Laura Martinez - Nutrition Guru
+                      </h5>
                       <p class="card-text">
                         Dr. Laura is our female nutrition expert. She's
                         dedicated to optimizing your dog's health through
@@ -643,7 +643,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-8 col-12 my-2 text-start">
                   <div class="card m-auto text-center text-lg-start">
                     <div class="card-body">
-                      <h5 class="card-title fs-2"> Mark Anderson - Canine Specialist</h5>
+                      <h5 class="card-title fs-2">
+                        Mark Anderson - Canine Specialist
+                      </h5>
                       <p class="card-text">
                         Mark, has dedicated his life to understanding dogs. His
                         expertise helps resolve behavior issues and fosters
@@ -669,7 +671,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-8 col-12 my-2 text-start">
                   <div class="card m-auto text-center text-lg-start">
                     <div class="card-body">
-                      <h5 class="card-title fs-2"> Richard Foster - Canine Training Pro</h5>
+                      <h5 class="card-title fs-2">
+                        Richard Foster - Canine Training Pro
+                      </h5>
                       <p class="card-text">
                         Ricky, our male dog training specialist, has a knack for
                         teaching tricks and manners. He's dedicated to
@@ -695,7 +699,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-8 col-12 my-2 text-start">
                   <div class="card m-auto text-center text-lg-start">
                     <div class="card-body">
-                      <h5 class="card-title fs-2">Sarah Mitchell - Playtime Enthusiast</h5>
+                      <h5 class="card-title fs-2">
+                        Sarah Mitchell - Playtime Enthusiast
+                      </h5>
                       <p class="card-text">
                         Sarah, our female playtime expert, brings boundless
                         energy to our furry clients. Her engaging play sessions
@@ -714,12 +720,12 @@
 
     <section class="contact py-2" id="Contact">
       <div class="container">
-        <div class="text-center my-5">
+        <div class="text-center my-5 contact-heading">
           <h1>Feel free <span class="text-danger">to connect</span></h1>
           <hr class="w-25 m-auto" />
         </div>
         <div class="row py-3">
-          <div class="col-sm-12 col-md-6 col md-6 col-lg-6 col-12">
+          <div class="col-sm-12 col-md-6 col md-6 col-lg-6 col-12  contact-data-1">
             <form class="row g-3">
               <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Full Name</label>
@@ -770,15 +776,17 @@
                 </div>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-outline-danger">Submit</button>
+                <button type="submit" class="btn btn-outline-danger">
+                  Submit
+                </button>
               </div>
             </form>
           </div>
           <div
-            class="col-sm-12 col-md-6 col md-6 col-lg-6 col-12 text-end pt-4"
+            class="col-sm-12 col-md-6 col md-6 col-lg-6 col-12 text-end pt-4 contact-data-2"
           >
             <img
-              class="img-fluid img-thumbnail py-3"
+              class="img-fluid img-thumbnail py-3 "
               src="https://images.unsplash.com/photo-1596076463549-b4d123456b6b?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBldCUyMGNhcmV8ZW58MHx8MHx8fDA%3D"
               alt=""
             />
@@ -791,6 +799,18 @@
       &#169;2023 Paws & Play Pet Services
     </div>
 
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://kit.fontawesome.com/9317aadbca.js"
       crossorigin="anonymous"
@@ -805,5 +825,6 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
