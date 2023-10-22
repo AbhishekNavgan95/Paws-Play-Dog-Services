@@ -17,8 +17,8 @@
 .testimonial img {
     margin-top: 1rem;
     margin-inline: auto;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -32,11 +32,6 @@
     border-radius: 20px !important;
     overflow: hidden;
     transition: all .2s ease-in-out;
-}
-
-.card:hover {
-    box-shadow: 0 5px 5px #0000007d !important;
-    scale: 1.005 !important;
 }
 
 .logo {
