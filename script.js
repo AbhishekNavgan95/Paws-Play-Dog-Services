@@ -1,3 +1,23 @@
+document.querySelector(".services").addEventListener("click", () => {
+  document.querySelector(".menu").classList.toggle("menu-active")
+})
+
+document.querySelector(".services").addEventListener("mouseenter", () => {
+  document.querySelector(".menu").classList.add("menu-active")
+})
+
+document.querySelector(".services").addEventListener("mouseleave", () => {
+  document.querySelector(".menu").classList.remove("menu-active")
+})
+
+document.querySelector(".menu").addEventListener("mouseover", () => {
+  document.querySelector(".menu").classList.add("menu-active")
+})
+
+document.querySelector(".menu").addEventListener("mouseleave", () => {
+  document.querySelector(".menu").classList.remove("menu-active")
+})
+
 gsap.from(".navbar", {
   opacity: 0,
   delay: 0.5,
