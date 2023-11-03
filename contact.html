@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Paws & Play Pet Services</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom"
+      >
+        <div class="container">
+          <img class="logo" src="assets/logo.png" alt="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center fs-5 ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown services position-relative">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown">
+                  Our services
+                </a>
+                <ul class="menu">
+                  <li>
+                    <a class="dropdown-item" href="./service1.html"
+                      >Dog Walking Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./service2.html"
+                      >Dog Boardomg amd Daycare</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./service3.html"
+                      >Dog Grooming</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./service4.html"
+                      >Pet Sitting</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./service5.html"
+                      >Puppy training</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./service6.html">Pet Taxi</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact" id="Contact">
+      <div class="container">
+        <div class="text-center my-5 contact-heading">
+          <h1>Feel free <span class="text-danger">to connect</span></h1>
+          <hr class="w-25 m-auto" />
+        </div>
+        <div class="row my-5">
+          <div
+            class="col-sm-12 text-center text-lg-start col-md-6 col md-6 col-lg-6 col-12 d-grid contact-data-1"
+          >
+            <div>
+              <h3 class="fs-3 text-danger">Phone</h3>
+              <h4 class="fs-4">124-354-5234</h4>
+            </div>
+            <div>
+              <h3 class="fs-3 text-danger">Email</h3>
+              <p class="fs-5">info@pawsandplaypets.in</p>
+            </div>
+            <div>
+              <h3 class="fs-3 text-danger">Hours</h3>
+              <div class="d-grid gap-2">
+                <div>
+                  <p class="fs-5">Mon-Fri</p>
+                  <p class="fs-5">08:00-20:00</p>
+                </div>
+                <div>
+                  <p class="fs-5">Saturday</p>
+                  <p class="fs-5">09:00-20:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col md-6 col-lg-6 col-12 contact-data-1"
+          >
+            <form class="row g-3">
+              <div class="col-md-12">
+                <label for="inputName" class="form-label">Full Name</label>
+                <input
+                  type="text "
+                  required
+                  class="form-control"
+                  id="inputName"
+                />
+              </div>
+              <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input
+                  type="email"
+                  required
+                  class="form-control"
+                  id="inputEmail4"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="petsCount" class="form-label">Number of Pets</label>
+                <input
+                  type="number"
+                  placeholder="1"
+                  required
+                  class="form-control"
+                  id="petsCount"
+                />
+              </div>
+              <div class="col-md-8">
+                <label for="breed" class="form-label">Breed of Dog</label>
+                <input type="text " required class="form-control" id="breed" />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" required class="form-select">
+                  <option selected>Choose...</option>
+                  <option>Maharashtra</option>
+                  <option>gujrat</option>
+                  <option>Uttar pradesh</option>
+                  <option>Karnataka</option>
+                  <option>Kerala</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input
+                  type="text"
+                  required
+                  class="form-control"
+                  id="inputZip"
+                />
+              </div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-outline-danger">
+                  Submit
+                </button>
+              </div>
+              <div class="col-6 align-self-center">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Book an appointment
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-3 contact-img">
+        <section class="container">
+            <div class="row ">
+              <div class="col-lg-3 m-auto col-12">
+                <div class="row">
+                  <img class="col-8 m-auto img-thumbnail" src="assets/logo.png" alt="">
+                  <div class="col-4 text-center m-auto">
+                    <a href="./index.html" type="button" class=" btn btn-outline-danger">
+                      Home
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="footer container-fluid text-white bg-danger text-center py-3">
+      &#169;2023 Paws & Play Pet Services
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9317aadbca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

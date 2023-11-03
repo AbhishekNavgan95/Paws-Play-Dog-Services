@@ -39,31 +39,31 @@ gsap.from(".about-heading", {
   scrollTrigger: {
     trigger: ".about-heading",
     scroller: "body",
-    start: "top 70%",
+    start: "top 80%",
   },
 });
 
 gsap.from(".about-intro-1", {
     opacity: 0,
-    x: -70,
+    y: 30,
     duration: 1,
     delay: 0.3,
     scrollTrigger: {
         trigger: ".about-intro-1",
         scroller: "body",
-        start: "top 70%",
+        start: "top 80%",
     },
 });
 
 gsap.from(".about-intro-2", {
     opacity: 0,
-    x: 70,
+    y: 30,
     duration: 1,
     delay: 0.3,
     scrollTrigger: {
         trigger: ".about-intro-2",
         scroller: "body",
-        start: "top 70%",
+        start: "top 80%",
     },
 });
 
@@ -75,7 +75,7 @@ gsap.from(".services-heading", {
   scrollTrigger: {
     trigger: ".services-heading",
     scroller: "body",
-    start: "top 70%",
+    start: "top 80%",
   },
 });
 
@@ -87,7 +87,7 @@ gsap.from(".services-part-1", {
   scrollTrigger: {
       trigger: ".services-part-1",
       scroller: "body",
-      start: "top 70%",
+      start: "top 80%",
     },
 });
 
@@ -97,9 +97,21 @@ gsap.from(".services-part-2", {
     duration: 1,
     delay: 0.3,
     scrollTrigger: {
-    trigger: ".services-part-2",
+    trigger: ".services-part-1",
     scroller: "body",
-    start: "top 70%",
+    start: "top 80%",
+},
+});
+
+gsap.from(".cirtification", {
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    delay: 0.3,
+    scrollTrigger: {
+    trigger: ".cirtification",
+    scroller: "body",
+    start: "top 80%",
 },
 });
 
@@ -111,7 +123,7 @@ gsap.from(".team-heading", {
   scrollTrigger: {
     trigger: ".team-heading",
     scroller: "body",
-    start: "top 70%",
+    start: "top 80%",
   },
 });
 
@@ -123,13 +135,24 @@ gsap.from(".team-data", {
     scrollTrigger: {
         trigger: ".team-data",
         scroller: "body",
-        start: "top 70%",
+        start: "top 80%",
     },
 });
 
 gsap.from(".contact-heading", {
   opacity: 0,
-  y: 30,
+  y: 50,
+  duration: 1,
+  delay: 0.3,
+  scrollTrigger: {
+    trigger: ".contact-heading",
+    scroller: "body",
+  },
+});
+
+gsap.from(".contact-img", {
+  opacity: 0,
+  y: 50,
   duration: 1,
   delay: 0.3,
   scrollTrigger: {
@@ -140,7 +163,7 @@ gsap.from(".contact-heading", {
 
 gsap.from(".contact-data-1", {
   opacity: 0,
-  x: -70,
+  y: 70,
   duration: 1,
   delay: 0.3,
   scrollTrigger: {
@@ -151,7 +174,7 @@ gsap.from(".contact-data-1", {
 
 gsap.from(".contact-data-2", {
   opacity: 0,
-  x: 70,
+  y: 70,
   duration: 1,
   delay: 0.3,
   scrollTrigger: {
