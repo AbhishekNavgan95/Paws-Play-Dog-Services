@@ -11,12 +11,16 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+  />
     <title>Paws & Play Pet Services</title>
   </head>
   <body>
     <header>
       <nav
-        class="navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom"
+        class="navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom fixed-top"
       >
         <div class="container">
           <img class="logo" src="assets/logo.png" alt="" />
@@ -87,15 +91,15 @@
 
     <section class="contact" id="Contact">
       <div class="container">
-        <div class="text-center my-5 contact-heading">
+        <div class="text-center my-3 my-md-5 contact-heading">
           <h1>Feel free <span class="text-danger">to connect</span></h1>
           <hr class="w-25 m-auto" />
         </div>
-        <div class="row my-5">
+        <div class="row my-4">
           <div
-            class="col-sm-12 text-center text-lg-start col-md-6 col md-6 col-lg-6 col-12 d-grid contact-data-1"
+            class="col-sm-12 text-center text-lg-start col-md-6 col col-lg-6 col-12 contact-data-1"
           >
-            <div>
+            <div class="mb-4">
               <h3 class="fs-3 text-danger">Phone</h3>
               <h4 class="fs-4">124-354-5234</h4>
             </div>
@@ -105,16 +109,23 @@
             </div>
             <div>
               <h3 class="fs-3 text-danger">Hours</h3>
-              <div class="d-grid gap-2">
+              <div class="mb-4">
                 <div>
-                  <p class="fs-5">Mon-Fri</p>
-                  <p class="fs-5">08:00-20:00</p>
+                  <p class="h5">Mon-Fri</p>
+                  <p class="h5">08:00-20:00</p>
                 </div>
                 <div>
-                  <p class="fs-5">Saturday</p>
-                  <p class="fs-5">09:00-20:00</p>
+                  <p class="h5">Saturday</p>
+                  <p class="h5">09:00-20:00</p>
                 </div>
               </div>
+              <button
+              href="#"
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              >Connect</button
+            >
             </div>
           </div>
           <div
@@ -218,7 +229,7 @@
                 <div class="row">
                   <img class="col-8 m-auto img-thumbnail" src="assets/logo.png" alt="">
                   <div class="col-4 text-center m-auto">
-                    <a href="./index.html" type="button" class=" btn btn-outline-danger">
+                    <a href="./index.html" type="button" class=" btn btn-danger">
                       Home
                     </a>
                   </div>
@@ -231,6 +242,39 @@
     <div class="footer container-fluid text-white bg-danger text-center py-3">
       &#169;2023 Paws & Play Pet Services
     </div>
+
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              ----Connect with us----
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex justify-content-around py-5">
+            <i class="bi bi-instagram fs-1 btn"></i>
+            <i class="bi bi-facebook fs-1 btn"></i>
+            <i class="bi bi-youtube fs-1 btn"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"

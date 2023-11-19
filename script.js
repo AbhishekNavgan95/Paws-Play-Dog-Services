@@ -31,42 +31,6 @@ gsap.from(".hero-sec", {
   duration: 1.5,
 });
 
-gsap.from(".about-heading", {
-  opacity: 0,
-  y: 30,
-  duration: 1,
-  delay: 0.3,
-  scrollTrigger: {
-    trigger: ".about-heading",
-    scroller: "body",
-    start: "top 80%",
-  },
-});
-
-gsap.from(".about-intro-1", {
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    delay: 0.3,
-    scrollTrigger: {
-        trigger: ".about-intro-1",
-        scroller: "body",
-        start: "top 80%",
-    },
-});
-
-gsap.from(".about-intro-2", {
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    delay: 0.3,
-    scrollTrigger: {
-        trigger: ".about-intro-2",
-        scroller: "body",
-        start: "top 80%",
-    },
-});
-
 gsap.from(".services-heading", {
   opacity: 0,
   y: 30,

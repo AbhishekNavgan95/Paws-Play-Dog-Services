@@ -11,12 +11,16 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <title>Paws & Play Pet Services</title>
   </head>
   <body>
     <header>
       <nav
-        class="navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom"
+        class="navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom fixed-top"
       >
         <div class="container">
           <img class="logo" src="assets/logo.png" alt="" />
@@ -35,7 +39,7 @@
             <ul class="navbar-nav text-center fs-5 ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-danger"
+                  class="nav-link active"
                   aria-current="page"
                   href="#Home"
                   >Home</a
@@ -45,11 +49,7 @@
                 <a class="nav-link" href="#About">About</a>
               </li>
               <li class="nav-item dropdown services position-relative">
-                <a
-                  class="nav-link dropdown-toggle"
-                  
-                  id="navbarDropdown"
-                >
+                <a class="nav-link dropdown-toggle" id="navbarDropdown">
                   Our services
                 </a>
                 <ul class="menu">
@@ -64,18 +64,22 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./service3.html">Dog Grooming</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./service4.html">Pet Sitting</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./service5.html">Puppy training</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./service6.html"
-                      >Pet Taxi</a
+                    <a class="dropdown-item" href="./service3.html"
+                      >Dog Grooming</a
                     >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./service4.html"
+                      >Pet Sitting</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./service5.html"
+                      >Puppy training</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./service6.html">Pet Taxi</a>
                   </li>
                 </ul>
               </li>
@@ -90,64 +94,38 @@
         </div>
       </nav>
 
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide hero-sec"
-        data-bs-ride="carousel"
+      <section
+        class="bg-light text-dark py-5 px-2 p-lg-0 pt-lg-5 text-center text-sm-start hero-sec"
       >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img5.avif" class="d-block w-100" alt="..." />
-            <div class="carousel-caption">
-              <h5>Taking care of pets is not just what we do</h5>
-              <h5>It's what we love and are passionate about.</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img4.avif" class="d-block w-100" alt="..." />
-            <div class="carousel-caption">
-              <h5>We are fully insured qualified and registered</h5>
+        <div class="container">
+          <div class="row py-1">
+            <img
+              class="img-fluid col-8 m-auto col-lg-4 pb-4 pb-lg-0"
+              src="assets/header.png"
+              alt=""
+            />
+            <div class="col-12 col-lg-8 m-auto">
+              <h1>
+                Taking care of pets is not just what we do It's what we love and
+                are <span class="text-danger"> passionate about.</span>
+              </h1>
+              <h5 class="fs-4 py-3">
+                We are fully insured qualified and registered
+              </h5>
+              <a
+                href="./contact.html"
+                type="button"
+                class="btn btn-outline-danger"
+              >
+                Book a Demo
+              </a>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      </section>
     </header>
 
-    <section class="about py-3" id="About">
+    <section class="about py-3 hero-sec" id="About">
       <div class="container">
         <div class="text-center my-5 about-heading">
           <h1>About <span class="text-danger">us</span></h1>
@@ -155,25 +133,42 @@
         </div>
         <div class="row">
           <div
-            class="col-sm-12 col-md-5 col-lg-5 col-12 text-center text-lg-start about-intro-1"
+            class="col-sm-12 col-md-7 col-lg-7 col-12 text-start text-lg-start about-intro-1 my-auto pb-5 pb-md-0"
           >
-            <p class="p-2 fs-5">
-              "Paws & Play Dog Services is your trusted partner in providing
-              exceptional care for your furry family members. From dog walking
-              and grooming to boarding and training, we offer a range of
-              services to keep your dogs happy, healthy, and entertained. Your
-              pet's well-being is our top priority."
+            <p class="fs-3 fs-bold text-center text-md-start">
+              Discover Unparalleled Pet Care at Paws & Play Dog Services:
             </p>
-            <div class="my-4 text-left">
-              <img
+            <p class="fs-5 text-center text-md-start">
+              Welcome to Paws & Play Dog Services, where your furry companions
+              are not just pets but cherished members of our extended family. As
+              your dedicated partner in pet care, we take pride in offering a
+              comprehensive suite of services crafted to meet the unique needs
+              of your beloved dogs. From invigorating dog walks and pampering
+              grooming sessions to comfortable boarding and specialized
+              training, we are committed to ensuring your pets thrive in an
+              environment filled with love, activity, and personalized
+              attention. Your pet's well-being is not just our mission; it's our
+              unwavering priority.
+            </p>
+          </div>
+          <div
+            class="text-left col-sm-12 col-md-4 col-lg-4 col-12 text-center m-auto"
+          >
+            <img
               class="about-us-img img-fluid img-thumbnail"
               src="assets/logo.png"
               alt=""
-              />
-            </div>
+            />
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center about-intro-2">
-            <div class="accordion my-4 text-center" id="accordionPanelsStayOpenExample">
+        </div>
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-12 col-lg-12 col-12 m-auto text-start about-intro-2"
+          >
+            <div
+              class="accordion my-4 text-center"
+              id="accordionPanelsStayOpenExample"
+            >
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                   <button
@@ -191,6 +186,7 @@
                   id="panelsStayOpen-collapseOne"
                   class="accordion-collapse collapse show"
                   aria-labelledby="panelsStayOpen-headingOne"
+                  class="accordion-button collapsed"
                 >
                   <div class="accordion-body">
                     "We're Paws & Play - Your dog's best friend. We offer
@@ -301,35 +297,35 @@
                 </div>
               </div>
             </div>
-            <div>
-              <a href="./contact.html" type="button" class="btn btn-outline-danger">
-                Book a Demo
-              </a>
-            </div>
-          </div> 
+          </div>
         </div>
       </div>
     </section>
-    
-    <hr class="w-75 m-auto my-5 cirtification"/>
+
+    <hr class="w-75 m-auto my-5 cirtification" />
 
     <section class="about py-3 bg-light cirtification" id="About">
       <div class="container">
         <div class="row">
           <div
-            class="m-auto col-sm-12 col-md-5 col-lg-5 col-12 text-center text-lg-start about-intro-1">
-            <h1 class="text-danger">We are fully qualified, licensed and insured.</h1>
+            class="m-auto col-sm-12 col-md-5 col-lg-5 col-12 text-center text-lg-start about-intro-1"
+          >
+            <h1 class="text-danger">
+              We are fully qualified, licensed and insured.
+            </h1>
             <p class="p-2 fs-5">
-              PAWS & PLAY DOG SERVICES IS FULLY INSURED AND LICENSED TO BOARD ANIMALS BY
-              BIRMINGHAM COUNCIL, A GOLD MEMBER OF NARPS AND ALSO HOLD A
-              QUALIFICATION IN PET SITTING.
+              PAWS & PLAY DOG SERVICES IS FULLY INSURED AND LICENSED TO BOARD
+              ANIMALS BY BIRMINGHAM COUNCIL, A GOLD MEMBER OF NARPS AND ALSO
+              HOLD A QUALIFICATION IN PET SITTING.
             </p>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center about-intro-2">
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center about-intro-2"
+          >
             <img
-            class="about-us-img img-fluid img-thumbnail"
-            src="assets/certificate.jpeg"
-            alt=""
+              class="about-us-img img-fluid img-thumbnail"
+              src="assets/certificate.jpeg"
+              alt=""
             />
           </div>
         </div>
@@ -347,11 +343,7 @@
         <div class="row mt-5 services-part-1">
           <div class="col-sm-12 col-md-4 col-lg-4 col-12 my-3">
             <div class="card shadow border border-1">
-              <img
-                src="assets/s1.avif"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="assets/s1.avif" class="card-img-top" alt="..." />
               <div class="card-body text-center text-lg-start">
                 <h5 class="card-title">Dog Walking Services</h5>
                 <a href="./service1.html" class="btn text-danger px-0">
@@ -362,14 +354,10 @@
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4 col-12 my-3">
             <div class="card shadow border border-1">
-              <img
-                src="assets/s2.avif"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="assets/s2.avif" class="card-img-top" alt="..." />
               <div class="card-body text-center text-lg-start">
                 <h5 class="card-title">Dog Boarding and Daycare</h5>
-                <a href="service2.html" class="btn text-danger  px-0">
+                <a href="service2.html" class="btn text-danger px-0">
                   Learn more...
                 </a>
               </div>
@@ -377,14 +365,10 @@
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4 col-12 my-3">
             <div class="card shadow border border-1">
-              <img
-                src="assets/s3.avif"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="assets/s3.avif" class="card-img-top" alt="..." />
               <div class="card-body text-center text-lg-start">
                 <h5 class="card-title">Dog Grooming</h5>
-                <a href="service3.html" class="btn text-danger  px-0">
+                <a href="service3.html" class="btn text-danger px-0">
                   Learn more...
                 </a>
               </div>
@@ -394,14 +378,10 @@
         <div class="row mb-5 services-part-2">
           <div class="col-sm-12 col-md-4 col-lg-4 col-12 my-3">
             <div class="card shadow border border-1">
-              <img
-                src="assets/s4.avif"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="assets/s4.avif" class="card-img-top" alt="..." />
               <div class="card-body text-center text-lg-start">
                 <h5 class="card-title">Pet Sitting</h5>
-                <a href="service4.html" class="btn text-danger  px-0">
+                <a href="service4.html" class="btn text-danger px-0">
                   Learn more...
                 </a>
               </div>
@@ -409,14 +389,10 @@
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4 col-12 my-3">
             <div class="card shadow border border-1">
-              <img
-                src="assets/s5.avif"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="assets/s5.avif" class="card-img-top" alt="..." />
               <div class="card-body text-center text-lg-start">
                 <h5 class="card-title">Puppy Training Classes</h5>
-                <a href="service5.html" class="btn text-danger  px-0">
+                <a href="service5.html" class="btn text-danger px-0">
                   Learn more...
                 </a>
               </div>
@@ -424,11 +400,7 @@
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4 col-12 my-3">
             <div class="card shadow border border-1">
-              <img
-                src="assets/s6.avif"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="assets/s6.avif" class="card-img-top" alt="..." />
               <div class="card-body text-center text-lg-start">
                 <h5 class="card-title">Pet Taxi</h5>
                 <a href="service6.html" class="btn text-danger px-0">
@@ -504,7 +476,8 @@
                   class="col-sm-12 col-md-6 col-lg-4 col-12 my-2 text-center"
                 >
                   <img
-                    class="img-fluid img-thumbnail"
+                    style="width: 350px; height: 400px; object-fit: cover"
+                    class="img-fluid img-thumbnail rounded-3"
                     src="assets/p1.avif"
                     alt=""
                   />
@@ -520,7 +493,13 @@
                         canine health. With over 15 years of experience, he's a
                         trusted name in pet care.
                       </p>
-                      <a href="#" class="btn btn-outline-danger">Connect</a>
+                      <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        >Connect</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -532,7 +511,8 @@
                   class="col-sm-12 col-md-6 col-lg-4 col-12 my-2 text-center"
                 >
                   <img
-                    class="img-fluid img-thumbnail"
+                    style="width: 350px; height: 400px; object-fit: cover"
+                    class="img-fluid img-thumbnail rounded-3"
                     src="assets/p2.avif"
                     alt=""
                   />
@@ -548,7 +528,13 @@
                         picture-perfect pets. With a gentle touch and creative
                         flair, she'll make your dog shine.
                       </p>
-                      <a href="#" class="btn btn-outline-danger">Connect</a>
+                      <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        >Connect</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -560,7 +546,8 @@
                   class="col-sm-12 col-md-6 col-lg-4 col-12 my-2 text-center"
                 >
                   <img
-                    class="img-fluid img-thumbnail"
+                    style="width: 350px; height: 400px; object-fit: cover"
+                    class="img-fluid img-thumbnail rounded-3"
                     src="assets/p3.avif"
                     alt=""
                   />
@@ -576,7 +563,13 @@
                         dedicated to optimizing your dog's health through
                         tailored diet and wellness plans.
                       </p>
-                      <a href="#" class="btn btn-outline-danger">Connect</a>
+                      <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        >Connect</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -588,7 +581,8 @@
                   class="col-sm-12 col-md-6 col-lg-4 col-12 my-2 text-center"
                 >
                   <img
-                    class="img-fluid img-thumbnail"
+                    style="width: 350px; height: 400px; object-fit: cover"
+                    class="img-fluid img-thumbnail rounded-3"
                     src="assets/p4.avif"
                     alt=""
                   />
@@ -604,7 +598,13 @@
                         expertise helps resolve behavior issues and fosters
                         strong bonds.
                       </p>
-                      <a href="#" class="btn btn-outline-danger">Connect</a>
+                      <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        >Connect</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -616,7 +616,8 @@
                   class="col-sm-12 col-md-6 col-lg-4 col-12 my-2 text-center"
                 >
                   <img
-                    class="img-fluid img-thumbnail"
+                    style="width: 350px; height: 400px; object-fit: cover"
+                    class="img-fluid img-thumbnail rounded-3"
                     src="assets/p5.avif"
                     alt=""
                   />
@@ -632,7 +633,13 @@
                         teaching tricks and manners. He's dedicated to
                         unleashing your dog's full potential.
                       </p>
-                      <a href="#" class="btn btn-outline-danger">Connect</a>
+                      <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        >Connect</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -644,7 +651,8 @@
                   class="col-sm-12 col-md-6 col-lg-4 col-12 my-2 text-center"
                 >
                   <img
-                    class="img-fluid img-thumbnail"
+                    style="width: 350px; height: 400px; object-fit: cover"
+                    class="img-fluid img-thumbnail rounded-3"
                     src="assets/p6.avif"
                     alt=""
                   />
@@ -660,7 +668,13 @@
                         energy to our furry clients. Her engaging play sessions
                         keep dogs happy, healthy, and entertained.
                       </p>
-                      <a href="#" class="btn btn-outline-danger">Connect</a>
+                      <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        >Connect</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -675,31 +689,62 @@
       &#169;2023 Paws & Play Pet Services
     </div>
 
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              ----Connect with us----
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex justify-content-around py-5">
+            <i class="bi bi-instagram fs-1 btn"></i>
+            <i class="bi bi-facebook fs-1 btn"></i>
+            <i class="bi bi-youtube fs-1 btn"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script
-    src="https://kit.fontawesome.com/9317aadbca.js"
-    crossorigin="anonymous"
+      src="https://kit.fontawesome.com/9317aadbca.js"
+      crossorigin="anonymous"
     ></script>
     <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
     ></script>
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
   </body>
