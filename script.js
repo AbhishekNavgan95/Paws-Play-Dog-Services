@@ -10,11 +10,11 @@ document.querySelector(".services").addEventListener("mouseleave", () => {
   document.querySelector(".menu").classList.remove("menu-active")
 })
 
-document.querySelector(".menu").addEventListener("mouseover", () => {
+document.querySelector(".menu").addEventListener("click", () => {
   document.querySelector(".menu").classList.add("menu-active")
 })
 
-document.querySelector(".menu").addEventListener("mouseleave", () => {
+document.querySelector(".menu").addEventListener("click", () => {
   document.querySelector(".menu").classList.remove("menu-active")
 })
 

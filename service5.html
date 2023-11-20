@@ -11,12 +11,16 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <title>Paws & Play Pet Services</title>
   </head>
   <body>
     <header>
       <nav
-        class="navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom fixed-top"
+        class="shadow-lg navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom fixed-top"
       >
         <div class="container">
           <img class="logo" src="assets/logo.png" alt="" />
@@ -29,20 +33,15 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-list-nested"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav text-center fs-5 ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item dropdown services position-relative">
-                <a
-                  class="nav-link dropdown-toggle"
-                  id="navbarDropdown"
-                >
+                <a class="nav-link dropdown-toggle" id="navbarDropdown">
                   Our services
                 </a>
                 <ul class="menu">
@@ -72,14 +71,25 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./service6.html"
-                      >Pet Taxi</a
-                    >
+                    <a class="dropdown-item" href="./service6.html">Pet Taxi</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white btn btn-danger mx-5" href="./contact.html">Contact</a>
+                <a
+                  class="nav-link text-white btn btn-danger mx-2 my-2"
+                  href="./contact.html"
+                  >Book a Demo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                href="#"
+                class="nav-link btn text-danger btn-outline-danger mx-2 my-2"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                >Connect</a
+              >
               </li>
             </ul>
           </div>
@@ -87,28 +97,137 @@
       </nav>
     </header>
 
-    <section class="about py-3 hero-sec" id="About">
+    <section class="about py-1 hero-sec" id="About">
       <div class="container">
-        <div class="row">
-          <div class="my-5 col-12 text-center text-lg-start about-intro-1">
-            <h1 class="text-danger">Puppy Training Classes</h1>
-            <p class="p-2 fs-5">
-              At our puppy training classes, we're dedicated to nurturing the
-              potential of your young canine companion. Our carefully designed
-              program focuses on teaching your pup the essentials of obedience,
-              socialization, and good behavior. With our expert guidance, your
-              puppy will blossom into a well-mannered and confident companion,
-              setting the foundation for a lifetime of happy, harmonious living
-              alongside your family.
-            </p>
-            <a href="./contact.html" class="btn btn-outline-danger">Book a Demo</a>
-          </div>
-          <div class="col-12 m-auto text-center about-intro-2">
-            <img
-              class="img-fluid img-thumbnail"
-              src="assets/s-5.avif"
-              alt=""
-            />
+        <div class="my-5 col-12 text-center text-lg-start about-intro-1">
+          <h1 class="text-danger">Puppy Training Classes</h1>
+          <p class="p-2 fs-5">
+            At Paws and Play Dog Services, our Puppy Training Classes go beyond
+            basic obedience, focusing on creating a strong foundation for a
+            harmonious lifelong relationship between you and your new furry
+            family member. Led by experienced trainers, our classes are designed
+            to instill good behavior, socialization, and essential commands in
+            your puppy. We understand the unique needs of young dogs, and our
+            positive reinforcement techniques create a fun and engaging
+            environment for both puppies and their owners.
+          </p>
+          <p class="p-2 fs-5">
+            Our Puppy Training Classes are not just about teaching commands;
+            they're about fostering holistic development in your puppy. We
+            address behavioral aspects, socialization skills, and positive
+            interactions to ensure your puppy becomes a well-mannered and
+            confident member of your family. From basic obedience commands to
+            addressing common puppy challenges, our classes provide the tools
+            and knowledge needed to navigate the early stages of your pup's
+            life.
+          </p>
+          <p class="p-2 fs-5">
+            In addition to teaching essential commands, our Puppy Training
+            Classes focus on building confidence and trust between you and your
+            puppy. Through interactive exercises, play sessions, and positive
+            reinforcement, we create an environment where your puppy learns to
+            trust your guidance and builds confidence in various situations.
+            These classes lay the groundwork for a happy, well-adjusted adult
+            dog, making the learning experience enjoyable for both puppies and
+            their owners.
+          </p>
+
+          <div class="row">
+            <div class="col-12 col-lg-6 m-auto">
+              <h2 class="text-danger">Benifits of Puppy Training</h2>
+              <hr class="mt-4"/>
+              <img
+                class="img-fluid img-thumbnail my-4 about-intro-2 shadow "
+                src="assets/s-5.avif"
+                alt=""
+              />
+              <a href="./contact.html" class="btn btn-danger col-12 shadow "
+                >Book a Demo</a
+              >
+            </div>
+            <div class="col-12 col-lg-6 row my-4 mx-auto">
+              <div class="list-group col-12">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                  aria-current="true"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Behavioral Foundation</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Establishes a solid behavioral foundation for your puppy,
+                    laying the groundwork for lifelong obedience.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Socialization Skills</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Promotes positive interactions with other puppies and
+                    people, enhancing socialization skills crucial for
+                    development.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Confidence Building</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Interactive exercises and positive reinforcement build your
+                    puppy's confidence, creating a well-adjusted and
+                    self-assured companion.
+                  </p>
+                </a>
+              </div>
+              <div class="list-group col-12">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                  aria-current="true"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Effective Communication</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Teaches essential commands, fostering effective
+                    communication between you and your puppy for seamless
+                    interaction.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Positive Reinforcement</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Utilizes positive reinforcement techniques, making the
+                    learning process enjoyable and encouraging good behavior.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Harmonious Relationship</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Establishes the groundwork for a harmonious lifelong
+                    relationship between you and your furry family member.
+                  </p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,6 +235,37 @@
 
     <div class="footer container-fluid text-white bg-danger text-center py-3">
       &#169;2023 Paws & Play Pet Services
+    </div>
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              ----Connect with us----
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex justify-content-around py-5">
+            <i class="bi bi-instagram fs-1 btn"></i>
+            <i class="bi bi-facebook fs-1 btn"></i>
+            <i class="bi bi-youtube fs-1 btn"></i>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
@@ -135,8 +285,8 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>

@@ -11,12 +11,16 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <title>Paws & Play Pet Services</title>
   </head>
   <body>
     <header>
       <nav
-        class="navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom fixed-top"
+        class="shadow-lg navbar px-lg-4 navbar-expand-lg navbar-light bg-white border-bottom fixed-top"
       >
         <div class="container">
           <img class="logo" src="assets/logo.png" alt="" />
@@ -29,20 +33,15 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-list-nested"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav text-center fs-5 ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item dropdown services position-relative">
-                <a
-                  class="nav-link dropdown-toggle"
-                  id="navbarDropdown"
-                >
+                <a class="nav-link dropdown-toggle" id="navbarDropdown">
                   Our services
                 </a>
                 <ul class="menu">
@@ -72,14 +71,25 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./service6.html"
-                      >Pet Taxi</a
-                    >
+                    <a class="dropdown-item" href="./service6.html">Pet Taxi</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white btn btn-danger mx-5" href="./contact.html">Contact</a>
+                <a
+                  class="nav-link  text-white btn btn-danger mx-2 my-2"
+                  href="./contact.html"
+                  >Book a Demo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                href="#"
+                class="nav-link btn text-danger btn-outline-danger mx-2 my-2"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                >Connect</a
+              >
               </li>
             </ul>
           </div>
@@ -87,29 +97,138 @@
       </nav>
     </header>
 
-    <section class="about py-3 hero-sec" id="About">
+    <section class="about py-1 hero-sec" id="About">
       <div class="container">
-        <div class="row">
-          <div class="my-5 col-12 text-center text-lg-start about-intro-1">
-            <h1 class="text-danger">Pet Taxi</h1>
-            <p class="p-2 fs-5">
-              When it comes to getting your beloved dog to essential
-              appointments like the vet or groomer, we've got you covered. Our
-              pet transportation service is designed with your convenience and
-              your pet's well-being in mind. We provide safe, stress-free
-              journeys for your dog, ensuring they reach their destination in
-              comfort and style. Let us handle the logistics so that you can
-              enjoy peace of mind, knowing that your dog's travels are in expert
-              hands.
-            </p>
-            <a href="./contact.html" class="btn btn-outline-danger">Book a Demo</a>
-          </div>
-          <div class="col-12 m-auto text-center about-intro-2">
-            <img
-              class="img-fluid img-thumbnail"
-              src="assets/s-6.avif"
-              alt=""
-            />
+        <div class="my-5 col-12 text-center text-lg-start about-intro-1">
+          <h1 class="text-danger">Pet Taxi</h1>
+          <p class="p-2 fs-5">
+            Paws and Play Dog Services proudly offers our Pet Taxi service,
+            ensuring stress-free transportation for your beloved pets. We
+            understand that getting your pet to appointments, whether it's the
+            vet, groomer, or any other destination, can be a logistical
+            challenge. Our reliable and pet-friendly transportation service is
+            designed to make this process seamless, safe, and comfortable. With
+            our Pet Taxi, you can rest assured that your furry family member
+            will reach their destination in the hands of caring professionals,
+            minimizing stress and ensuring a positive travel experience.
+          </p>
+          <p class="p-2 fs-5">
+            Our Pet Taxi service provides a safe and convenient solution for pet
+            parents with busy schedules or transportation constraints. Whether
+            your pet needs a routine check-up, grooming session, or any other
+            appointment, our experienced drivers ensure they arrive promptly and
+            securely. The climate-controlled and comfortable vehicles prioritize
+            your pet's well-being, making the journey as enjoyable as the
+            destination.
+          </p>
+          <p class="p-2 fs-5">
+            Paws and Play Dog Services extends our commitment to professional
+            care from door to door with our Pet Taxi service. Our drivers are
+            not just transportation specialists; they are compassionate
+            caregivers who understand the unique needs of pets during travel.
+            From loading to unloading, we prioritize safety and comfort,
+            allowing you to attend to your responsibilities with the confidence
+            that your pet is in capable and caring hands.
+          </p>
+
+          <div class="row">
+            <div class="col-12 col-lg-6 row my-4 mx-auto">
+              <div class="list-group col-12">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                  aria-current="true"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Stress-Free Transportation</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Ensures a calm and stress-free journey for your pet,
+                    minimizing anxiety and ensuring comfort.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">
+                      Convenience for Busy Pet Parents
+                    </h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Provides a convenient solution for pet parents with busy
+                    schedules, making appointments and travel hassle-free.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Climate-Controlled Comfort</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Pet-friendly vehicles with climate control ensure a
+                    comfortable and safe journey for your furry friend.
+                  </p>
+                </a>
+              </div>
+              <div class="list-group col-12">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                  aria-current="true"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">
+                      Professional and Caring Drivers
+                    </h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Experienced drivers who are not just transportation
+                    specialists but compassionate caregivers ensuring your pet's
+                    well-being.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Door-to-Door Service</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Utilizes positive reinforcement techniques, making the
+                    learning process enjoyable and encouraging good behavior.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action bg-light m-auto"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 mx-auto">Safe and Timely Arrival</h5>
+                  </div>
+                  <p class="mb-1 text-center">
+                    Prioritizes safety, ensuring your pet arrives promptly at
+                    their destination, be it the vet or groomer.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 m-auto">
+              <h2 class="text-danger">Benifits of Pet Taxi</h2>
+              <hr class="mt-4"/>
+              <img
+                class="img-fluid img-thumbnail my-4 about-intro-2 shadow "
+                src="assets/s-6.avif"
+                alt=""
+              />
+              <a href="./contact.html" class="btn btn-danger col-12 shadow "
+                >Book a Demo</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -117,6 +236,37 @@
 
     <div class="footer container-fluid text-white bg-danger text-center py-3">
       &#169;2023 Paws & Play Pet Services
+    </div>
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              ----Connect with us----
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex justify-content-around py-5">
+            <i class="bi bi-instagram fs-1 btn"></i>
+            <i class="bi bi-facebook fs-1 btn"></i>
+            <i class="bi bi-youtube fs-1 btn"></i>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
@@ -136,8 +286,8 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
